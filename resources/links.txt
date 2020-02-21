@@ -1,0 +1,12 @@
+https://pagellapolitica.it/
+https://github.com/claimskg/claimskg-extractor
+
+
+
+
+
+
+
+Elass's links:
+--------------------------------------------------------------------------------
+https://medium.com/france-school-of-ai/web-scraping-avec-python-apprenez-%C3%A0-utiliser-beautifulsoup-proxies-et-un-faux-user-agent-d7bfb66b6556
