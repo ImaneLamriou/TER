@@ -4,12 +4,16 @@ beautifulsoup4==4.8.2
 certifi==2019.11.28
 chardet==3.0.4
 colorama==0.4.3
+entrypoints==0.3
+flake8==3.7.9
 idna==2.9
 isort==4.3.21
 lazy-object-proxy==1.4.3
 lxml==4.5.0
 mccabe==0.6.1
+pkg-resources==0.0.0
 pycodestyle==2.5.0
+pyflakes==2.1.1
 pylint==2.4.4
 requests==2.23.0
 six==1.14.0
