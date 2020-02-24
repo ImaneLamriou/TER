@@ -20,17 +20,3 @@ print("Address:", address)
 # Panzana pazzesca = 5
 
 
-source = requests.get(url).text
-soup = bs.BeautifulSoup(source, "lxml")
-tables = soup.findAll('div', {'class': 'col-lg-4 mb-7'})
-
-# dans ce cas on récupere les titres et les liens avec le 'Href'
-newArticles = {}
-i = 1
-for table in tables:
-    title = table.find('div', {'class': 'mb-0 px-2 min-height-title'})
-    title = title.find('span', {'class': 'h6'}).text
-    print("title:", title)
-    link = table.find('a', {'class': 'statement-link'})['href']
-    print("Article", i, "\n = Link:", link, "\nTitle:", title)
-    i += 1
