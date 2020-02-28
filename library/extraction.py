@@ -29,25 +29,37 @@ def linksOfpagellapolitica():
             # dans ce cas on récupere les titres et les liens avec le 'Href'
 
             for table in tables:
-
                 if table.find('div', {'class': 'mb-0 px-2 min-height-title'}):
                     div = table.find(
                         'div', {'class': 'mb-0 px-2 min-height-title'})
                     title = div.find('span', {'class': 'h6'}).text.strip()
                     guillemetPattern = re.search(r'\\', title)
+                    print("guillemetPattern:",guillemetPattern)
+
                     if guillemetPattern:
                         title = title[2:]
+                        print("guillemetPattern:",guillemetPattern)
+
                 elif table.find('div', {'class': 'mb-2 mt-2 px-2'}):
                     div = table.find('div', {'class': 'mb-2 mt-2 px-2'})
-
                     if div.find('span', {'class': 'h2'}):
                         title = div.find('span', {'class': 'h2'}).text.strip()
+                        guillemetPattern = re.search(r'\\', title)
+                        if guillemetPattern:
+                            title = title[2:]
+                            print("guillemetPattern:",guillemetPattern)
+
                 elif table.find('article', {'class': 'article'}):
                     article = table.find('article', {'class': 'article'})
                     p = article.find('p', {'class': 'font-size-15'})
                     if p.find('span', {'class': 'text-dark'}):
                         title = p.find(
                             'span', {'class': 'text-dark'}).text.strip()
+                        guillemetPattern = re.search(r'\\', title)
+                        if guillemetPattern:
+                            title = title[2:]
+                            print("guillemetPattern:",guillemetPattern)
+
 
                 link = table.find('a', {'class': 'statement-link'})['href']
                 idPattern = re.search(r'/([0-9]+)/', link)
@@ -77,7 +89,50 @@ def writeLinksJson():
 def readLinksJson():
     file = 'dataBase/newArticlesLinks.json'
     with open(file) as jsonIn:
-        json.load(jsonIn)
+        data = json.load(jsonIn)
+    return data
 
 
-writeLinksJson()
+# def readLinksJson(**kwargs):
+#     file = 'dataBase/newArticlesLinks.json'
+#     with open(file) as jsonIn:
+#         data = json.load(jsonIn)
+#         for parameter in kwargs:
+
+#     return data
+
+
+def extractInfoArticle(id, online=False):
+    file = 'dataBase/newArticlesLinks.json'
+    if online:
+        url = 'https://pagellapolitica.it/'
+        uri = 'dichiarazioni/'
+        address = url + uri + id
+        print("address: ",address)
+        resp = requests.get(address)
+        if resp:
+            source = requests.get(address).text
+            soup = bs.BeautifulSoup(source, "lxml")
+
+
+
+            p = soup.find('p', {'class': 'h4 mb-1 px-2 text-dark font-weight-light'})
+            author = p.find('a', {'class': 'u-link-muted'}).text
+            print("Author", author)
+            # dans ce cas on récupere les titres et les liens avec le 'Href'
+
+            # for table in tables:
+            #     if table.find('div', {'class': 'mb-0 px-2 min-height-title'}):
+            #         div = table.find(
+            #             'div', {'class': 'mb-0 px-2 min-height-title'})
+            #         title = div.find('span', {'class': 'h6'}).text.strip()
+            #         guillemetPattern = re.search(r'\\', title)
+            #         print("guillemetPattern:",guillemetPattern)
+
+
+    else:
+        data = readLinksJson()
+        print("Link: \t", data[id]['link'])
+        print("Title: \t", data[id]['title'])
+
+
