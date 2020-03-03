@@ -8,7 +8,7 @@ import json
 # os.system("clear")
 # print(os.getcwd())
 
-
+# test
 def linksOfpagellapolitica():
     url = 'https://pagellapolitica.it/'
     uri = 'dichiarazioni/verificato?page='
