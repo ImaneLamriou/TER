@@ -83,30 +83,43 @@ def linksOfpagellapolitica():
     return articles, totalNumberOfArticles
 
 
-def articleLinkIdGenerator():
+def articleLinkIdGenerator(online=False):
+    # on a utilisé le online=false car si on est pas en ligne on pourra 
+    # utiliser la dataBase pour afficher les resultats voulue
     url = 'https://pagellapolitica.it/'
     uriPage = 'dichiarazioni/verificato?page='
-    for i in range(sys.maxsize):
-        pageNumber = i
-        pageNumber = str(pageNumber)
-        pageAddress = url + uriPage + pageNumber
+    jsonFile = 'dataBase/articles.json'
+    articles = {}
+    if online:
+        for i in range(sys.maxsize):
+            pageNumber = i
+            pageNumber = str(pageNumber)
+            pageAddress = url + uriPage + pageNumber
 
-        resp = requests.get(pageAddress)
-        if resp:
-            source = requests.get(pageAddress).text
-            soup = bs.BeautifulSoup(source, "lxml")
-            tables = soup.findAll('div', {'class': 'col-lg-3 mb-7'})
-            for table in tables:
-                uriArticleID = table.find('a', {'class': 'statement-link'})['href']
-                idPattern = re.search(r'/([0-9]+)/', uriArticleID)
-                idNumber = idPattern.group(1)
-                articles[idNumber] = {
-                    'url': uriArticleID,
-                }
+            resp = requests.get(pageAddress)
+            if resp:
+                source = requests.get(pageAddress).text
+                soup = bs.BeautifulSoup(source, "lxml")
+                tables = soup.findAll('div', {'class': 'col-lg-3 mb-7'})
+                for table in tables:
+                    uriArticleID = table.find('a', {'class': 'statement-link'})['href']
+                    print(url+uriArticleID)
+                    idPattern = re.search(r'/([0-9]+)/', uriArticleID)
+                    idNumber = idPattern.group(1)
+                    articles[idNumber] = {
+                        'url': url+uriArticleID,
+                    }
+                if idNumber == str(215):
+                    break
             if idNumber == str(215):
                 break
-        if idNumber == str(215):
-            break
+
+        with open(jsonFile, 'w') as file:
+            #la sortie de Json est une variable ici c'est a 
+            json.dump(articles, file, indent=2, ensure_ascii=False)
+    else:
+        with open(jsonFile) as file:
+            articles = json.load(file)
     return articles
 
 
@@ -150,10 +163,11 @@ def readLinksJson():
 def extractInfoArticle(id, online=False):
 
     article = {}
+    url = 'https://pagellapolitica.it/'
     if online:
-        url = 'https://pagellapolitica.it/'
         uriArticle = 'dichiarazioni/'
         address = url + uriArticle + id
+        print (address)
         resp = requests.get(address)
         if resp:
             source = requests.get(address).text
@@ -200,7 +214,7 @@ def extractInfoArticle(id, online=False):
             mainArticle = ' '.join(mainText)
 
             #les liens de reference dans le main text
-            listOfAllLinks = divMainArticle.findAll('a')
+            # listOfAllLinks = divMainArticle.findAll('a')
             listOfAllLinksHref = [link['href'] for link in divMainArticle.findAll('a')]
             
     else:
@@ -209,18 +223,18 @@ def extractInfoArticle(id, online=False):
         # tout les anciens elements du dic
         data[id] = {
                     **data[id], 
-                    "source":url,                           # le site de fact checking
-                    "claim":claim,
-                    "body":mainArticle,                     # le text de l'article
-                    "referred_links":listOfAllLinksHref,    # tous les liens dans le texte
-                    "title":fullTitle,                      # le titre de l'article
-                    "date":dateOrigin,                      # date de la claim
-                    "url": address,                         #url de l'article
+                    "source":"source not found",                           # le site de fact checking
+                    "claim":"claim not found",
+                    "body":"mainArticle not found",                     # le text de l'article
+                    "referred_links":"listOfAllLinksHref not found",    # tous les liens dans le texte
+                    "title":"fullTitle not found",                      # le titre de l'article
+                    "date":"dateOrigin not found",                      # date de la claim
+                    "url": "address not found",                         #url de l'article
                     "tags":"tags",                          # les mots cles
-                    "author": author,                       # auteur de la claim
-                    "datePublished":datePublished,
+                    "author": "author not found",                       # auteur de la claim
+                    "datePublished":"datePublished not found",
                     "rating_value":"rating_value",          # la valeur de la veracite
-                    "statementSource":statementSource,
+                    "statementSource":"statementSource not found",
                     "claim_entities":"claim_entities",      # les entities nomes qui est extraite de la claim
                     "body_entities":"body_entities",        # les entities nomes qui est extraite de l'article
                     "keyword_entities":"keyword_entities",  # parmi les tages, les entities nomes a partir de la tag

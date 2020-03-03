@@ -21,7 +21,14 @@ import extraction as ter
 # afficher tous les articles
 # afficher plusieur articles
 
-for i,id,links in enumerate(ter.articleLinkIdGenerator()):
-    print("id"+i,"= ",id,"\n",links)
+# for i,id,links in enumerate(ter.articleLinkIdGenerator()):
+#     print("id"+i,"= ",id,"\n",links)
 
-ter.writeLinksJson()
+# ter.writeLinksJson()
+
+
+a = ter.articleLinkIdGenerator()
+
+for id in a.keys():
+    article = ter.extractInfoArticle(id)
+    print("article: ", article)
