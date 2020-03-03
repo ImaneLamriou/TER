@@ -8,10 +8,11 @@ import json
 # os.system("clear")
 # print(os.getcwd())
 
-
+# test
 def linksOfpagellapolitica():
     url = 'https://pagellapolitica.it/'
     uriPage = 'dichiarazioni/verificato?page='
+    # maxsize : c'est pour prendre toutes les pages depuis 2012
     articles = {}
     totalNumberOfArticles = 1
     for i in range(sys.maxsize):
@@ -19,13 +20,14 @@ def linksOfpagellapolitica():
         pageNumber = str(pageNumber)
         address = url + uriPage + pageNumber
 
+        # si la resp est=200(pas d'erreur) on passe au if
         resp = requests.get(address)
         if resp:
             source = requests.get(address).text
             soup = bs.BeautifulSoup(source, "lxml")
             tables = soup.findAll('div', {'class': 'col-lg-3 mb-7'})
 
-            # dans ce cas on récupere les titres et les liens avec le 'Href'
+            # dans ce cas on récupere les titres et les liens avec le 'Href' chaque page a ça classe d'ou les differents If
 
             for table in tables:
                 if table.find('div', {'class': 'mb-0 px-2 min-height-title'}):
@@ -39,6 +41,7 @@ def linksOfpagellapolitica():
                         shortTitle = shortTitle[2:]
                         print("guillemetPattern:",guillemetPattern)
 
+                # strip() pour enlever les espaces au début et fin de string
                 elif table.find('div', {'class': 'mb-2 mt-2 px-2'}):
                     div = table.find('div', {'class': 'mb-2 mt-2 px-2'})
                     if div.find('span', {'class': 'h2'}):
@@ -59,7 +62,7 @@ def linksOfpagellapolitica():
                             shortTitle = shortTitle[2:]
                             print("guillemetPattern:",guillemetPattern)
 
-
+                # re : pour recupération des id de chaque page qu'il y'a entre le URI et le URL
                 uriArticleID = table.find('a', {'class': 'statement-link'})['href']
                 idPattern = re.search(r'/([0-9]+)/', uriArticleID)
                 idNumber = idPattern.group(1)
@@ -70,6 +73,8 @@ def linksOfpagellapolitica():
                 print(totalNumberOfArticles, idNumber, shortTitle)
                 totalNumberOfArticles += 1
 
+                # le if ici c'est pour arreter la boucle car elle tourne 
+                # indefiniment méme si l'ID n'existe pas
                 if idNumber == str(215):
                     break
         if idNumber == str(215):
@@ -105,12 +110,15 @@ def articleLinkIdGenerator():
     return articles
 
 
+# creatio, d'un fichier JSON pour stocker tout les pages recupéréer (titre et links)
+
 
 def writeLinksJson():
     file = 'dataBase/articles.json'
     articles, totalNumberOfArticles = linksOfpagellapolitica()
     with open(file, 'w') as jsonOut:
         json.dump(articles, jsonOut, indent=2, ensure_ascii=False)
+        # ensure_ascii=False : pour bien afficher les caractéres accentueux
 
 
 def readLinksJson():
@@ -250,5 +258,7 @@ def extractInfoArticle(id, online=False):
     
 
     return article
+
+# pour lire le contenue de JSON
 
 
