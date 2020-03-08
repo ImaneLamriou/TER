@@ -10,12 +10,12 @@ To do this command every time that you'll work on the project:
 ## To add files on the GitHub:
 Do these commands step by step:
 - See all files and folders that are changed:   
-´git status´   
+`git status`   
 - Edit the file .gitignore to remove unnecessary files.   
 - Add files to the stage:   
-´git add FILENAME_TO_ADD´   
+`git add FILENAME_TO_ADD`   
 - Write a comprehensive message and commit:   
-´git commit -m 'A comprehensive message about the job that you did in present tense and in English'´   
+`git commit -m 'A comprehensive message about the job that you did in present tense and in English'`   
 -  Send your commits to "hub" or any address that you gave for your remote:   
-´git push hub YOUR_BRANCHE_NAME´   
+`git push hub YOUR_BRANCHE_NAME`   
 - Go on your GitHub repository online to verify if you can see your new commits or not!   
