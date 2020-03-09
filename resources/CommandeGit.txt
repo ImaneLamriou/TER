@@ -29,6 +29,4 @@
 
 - git config --global user.email "gueye.aissatou96@hotmail.com" = pour ajouter l’adresse mail sur le git
 
-git config --global user.name « Aissatou »
-
-
+- git config --global user.name « Aissatou » = pour ajouter son nom sur le git
