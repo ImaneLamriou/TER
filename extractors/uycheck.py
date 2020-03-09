@@ -10,18 +10,7 @@ claims = []
 date_publish = []
 links = []
 sources = []
-"""
-head_first = head [0]
-title = (head_first.h2).text
-link = (head_first.a)['href']
-year_claim = (head_first.find('div', class_="bp-head").span.time).text
-source = (head_first.find('div', class_="mom-post-meta").a).text
-print (source)
 
-are = soup.findAll('div', class_="main-col")[0]
-b = are.find('a', class_='button medium full show-more-posts')['data-offset']
-print (b)
-"""
 
 for container in head :
 
