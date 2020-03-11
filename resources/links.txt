@@ -7,6 +7,12 @@ https://github.com/claimskg/claimskg-extractor
 
 
 
-Elass's links:
+Useful links:
 --------------------------------------------------------------------------------
+Web-scraping avec Python:
 https://medium.com/france-school-of-ai/web-scraping-avec-python-apprenez-%C3%A0-utiliser-beautifulsoup-proxies-et-un-faux-user-agent-d7bfb66b6556
+
+Natural Language Processing Using Python - Beginner Level:
+https://www.youtube.com/watch?v=jNK1WQm5plA&list=PLlgLmuG_Kgbafixugy4DzVue6BdX6awbX
+
+
