@@ -11,7 +11,8 @@ NLP (and Entity linking modules) for Python:
 - [StanfordNLP](https://stanfordnlp.github.io/stanfordnlp/)
 
 Articles:   
-- [Instructions and tests for using the TagMe package in python](http://www.programmersought.com/article/7320856236/)   
+- [Instructions and tests for using the TagMe package in python](http://www.programmersought.com/article/7320856236/)
+- [Named Entity Recognition with NLTK and SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
 NLTK reference:   
 - [Natural Language Processing with Python](http://www.nltk.org/book/)   
