@@ -14,6 +14,5 @@ Articles:
 - [Instructions and tests for using the TagMe package in python](http://www.programmersought.com/article/7320856236/)   
 
 NLTK reference:   
-- [Natural Language Toolkit](http://www.nltk.org)   
 - [Natural Language Processing with Python](http://www.nltk.org/book/)   
 - [Extracting Information from Text](http://www.nltk.org/book/ch07.html#information-extraction-architecture)   
