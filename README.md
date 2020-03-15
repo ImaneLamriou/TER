@@ -9,3 +9,6 @@ NLP (and Entity linking modules) for Python:
 - [spaCy](https://spacy.io/)
 - [NLTK](https://www.nltk.org/)
 - [StanfordNLP](https://stanfordnlp.github.io/stanfordnlp/)
+
+Articles:   
+- [Instructions and tests for using the TagMe package in python](http://www.programmersought.com/article/7320856236/)   
