@@ -4,7 +4,7 @@ The project talking about Fact Checking, and fake news. This code is going to ex
  
 Entity linking modules for Python:
 
-- TageMe
+- TagMe
 - Dexter
 - spaCy
 - NLTK
