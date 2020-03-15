@@ -17,3 +17,5 @@ Articles:
 NLTK reference:   
 - [Natural Language Processing with Python](http://www.nltk.org/book/)   
 - [Extracting Information from Text](http://www.nltk.org/book/ch07.html#information-extraction-architecture)   
+- [Text Preprocessing in Python: Steps, Tools, and Examples](https://medium.com/@datamonsters/text-preprocessing-in-python-steps-tools-and-examples-bf025f872908)   
+
