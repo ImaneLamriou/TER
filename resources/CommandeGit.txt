@@ -1,0 +1,32 @@
+﻿                      Commandes git
+
+- git init = pour initialiser un dossier comme un repertoire de git(à faire la première fois qu’on crée un projet github)
+
+- git status = pour savoir les dernières modifications faites sur le projet(github),
+
+- git add NomDuFichier = pour ajouter un fichier dans le projet exemple : git add extractor,py
+
+- Après n’importe quel commande faire un git status pour savoir les modification faites,
+
+- git add -A = pour ajouter tous les fichier : warning : déconseillé car tous les fichiers auront le même commentaire après le git commit,
+
+- git commit -m ’Commentaire’ = pour valider les modifications faites ( ajout fichier suppression ,,,) les fichiers doivent etre dans le stage(dans l’application git après git add par exemple), 
+
+- git push NomDonnéApresRemote NomBranche exple : git push hub  master (hub = nom donnée au lien github) = ajouter les modification faites dans le projet github ( en ligne),
+
+- git branch NomBranche = créer une branche,
+
+
+- git clone adresseDuSite = pour enregistrer en local un projet complet,
+
+
+- git  checkout NomBranche = pour changer la branche (dans le quel on travaille ) vers  NomBranche
+
+- git pull NomRemote NomBranche ( git pull hub master) = mettre à jour les fichier en local (en les recupérant dans le remote)
+
+- git log = pour afficher tous les commits
+
+
+- git config --global user.email "gueye.aissatou96@hotmail.com" = pour ajouter l’adresse mail sur le git
+
+- git config --global user.name « Aissatou » = pour ajouter son nom sur le git
