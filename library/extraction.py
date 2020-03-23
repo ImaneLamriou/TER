@@ -371,18 +371,61 @@ def findPageNumberOfID(id):
         if idWanted == id:
             break
 
+
 def accumulate(*args):
     res = ""
     for sentence in args:
         res += sentence + " "
     return res
 
+
 def listToString(list):
     res = " ".join(list)
     return res
 
+
+def Annotation_mentions(txt):
+    """
+         Discover the concepts of wiki concept entities in those texts
+         :param txt: a text object, str type
+         :return: key-value pair, the key is the original entity concept in this article, the value is the concept size of the concept as a wiki concept, and those that belong to the wiki concept but have ambiguity also include
+    """
+    annotation_mentions = tagme.mentions(txt)
+    dic = dict()
+    for mention in annotation_mentions.mentions:
+        try:
+            dic[str(mention).split(" [")[0]] = str(mention).split("] lp=")[1]
+        except:
+            logger.error('error annotation_mention about ' + mention)
+    return dic
+
+
+def Annotate(txt, language="en", theta=0.1):
+    """
+         Solving the mapping problem between conceptual entities of text and Wikipedia concepts
+         :param txt: a text object, str type
+         :param language: The language used "de" is German, "en" is English, "it" is Italian. The default is English "en"
+         :param theta: threshold [0, 1], select the label score, the larger the threshold, the more reliable the filtered map, the default is 0.1
+         :return: key-value pair [(A, B):score] A is the conceptual entity in the text, B is the wiki concept entity, and score is the score
+    """
+    annotations = tagme.annotate(txt, lang=language)
+    dic = dict()
+    for ann in annotations.get_annotations(theta):
+        # print(ann)
+        try:
+            A, B, score = str(ann).split(" -> ")[0], str(ann).split(" -> ")[1].split(
+                " (score: ")[0], str(ann).split(" -> ")[1].split(" (score: ")[1].split(")")[0]
+            dic[(A, B)] = score
+        except:
+            logger.error('error annotation about ' + ann)
+    return dic
+
+
 def wikiLinks(text):
-    listOfLinks=[]
+    """
+    This function will get an string as a parameter and will return a list of all found entities.
+    """
+    listOfLinks = []
     obj = Annotation_mentions(text)
     for namedIdentity in obj.keys():
         norm_title = tagme.normalize_title(namedIdentity)
