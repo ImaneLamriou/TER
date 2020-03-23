@@ -369,3 +369,10 @@ def findPageNumberOfID(id):
                 break
         if idWanted == id:
             break
+
+def accumulate(*args):
+    res = ""
+    for sentence in args:
+        res += sentence + " "
+    return res
+
