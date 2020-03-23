@@ -421,7 +421,7 @@ def Annotate(txt, language="en", theta=0.1):
     return dic
 
 
-def wikiLinks(text):
+def wikiLinks(text, language="it"):
     """
     This function will get an string as a parameter and will return a list of all found entities.
     """
