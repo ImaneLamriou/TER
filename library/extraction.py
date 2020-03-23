@@ -380,3 +380,12 @@ def listToString(list):
     res = " ".join(list)
     return res
 
+def wikiLinks(text):
+    listOfLinks=[]
+    obj = Annotation_mentions(text)
+    for namedIdentity in obj.keys():
+        norm_title = tagme.normalize_title(namedIdentity)
+        wikiTitle = tagme.wiki_title(norm_title)
+        url = tagme.title_to_uri(wikiTitle, lang=language)
+        listOfLinks.append(url)
+    return listOfLinks
