@@ -376,3 +376,7 @@ def accumulate(*args):
         res += sentence + " "
     return res
 
+def listToString(list):
+    res = " ".join(list)
+    return res
+
