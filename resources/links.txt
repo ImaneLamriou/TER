@@ -17,3 +17,6 @@ https://www.youtube.com/watch?v=jNK1WQm5plA&list=PLlgLmuG_Kgbafixugy4DzVue6BdX6a
 
 Natural Language Processing in Artificial Intelligence:
 https://www.youtube.com/watch?v=YVQcE5tV26s&list=PLlgLmuG_Kgbafixugy4DzVue6BdX6awbX&index=2
+
+NLTK video tutorial:
+https://pythonprogramming.net/tokenizing-words-sentences-nltk-tutorial/
