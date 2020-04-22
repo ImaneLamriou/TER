@@ -96,36 +96,64 @@ def veracity(soup):
 
 def date(soup):
     if soup:
-        div = soup.find('div', {'class': 'article-content'})
+        div = soup.find('div', {'class': 'col-sm-12 time-subscribe-wrapper'})
         date = div.find('time', {'pubdate datetime'})
     else:
         date = 'No Date'
     return date
 
 
-def api():
-    link = "https://fr.africacheck.org/wp-json/"
-    resp = requests.get(link)
-    source = requests.get(link).json()
-    file = "api.json"
-    with open(file, "w") as jsonFile:
-        json.dump(source, jsonFile, indent=2)
+def tags(soup):
+    if soup:
+        tags = soup.findAll('meta', {'property': 'article:tag'})['content']
+    else:
+        tags = []
+    return tags
 
-    # premiere ligne de la fonction qui recupere les liens
+
+def api(online=False):
+    linkV1 = "https://fr.africacheck.org/wp-json/"
+    linkV2 = "https://fr.africacheck.org/wp-json/wp/v2"
+    posts = "https://fr.africacheck.org/wp-json/wp/v2/posts"
+
+    uri = "https://fr.africacheck.org/wp-json/?p=223333"
+
+    file = "posts.json"
+    if online:
+        data = requests.get(uri).json()
+        with open(file, "w") as jsonFile:
+            json.dump(data, jsonFile, indent=2)
+    else:
+        with open(file) as readJson:
+            data = json.load(readJson)
+    return data
+
+
+def extract(data):
+    print("size of data: ", len(data))
+
+
+# premiere ligne de la fonction qui recupere les liens
 links = links(online=False)
 # https://fr.africacheck.org/reports/covid-19-le-margousier-neem-ne-contient-pas-de-la-chloroquine/
 print("*"*100)
 
-link = links[2]
-print("Article link: \n", link)
-soup = beautifulObject(link)
-title = title(soup)
-claim, source = claimAndSource(soup)
-veracity = veracity(soup)
+# link = links[2]
+# print("Article link: \n", link)
+# soup = beautifulObject(link)
+# title = title(soup)
+# claim, source = claimAndSource(soup)
+# veracity = veracity(soup)
 
-print("Number of articles:", len(links))
-print("\nTitle:", title)
-print("\nclaim:", claim, "\nSource:", source)
-print("\nVeracity:", veracity)
+# print("Number of articles:", len(links))
+# print("\nTitle:", title)
+# print("\nclaim:", claim, "\nSource:", source)
+# print("\nVeracity:", veracity)
 
-api()
+data = api()
+posts = data
+print(len(posts))
+print(posts[0].keys())
+for post in posts:
+    print(post["id"], "date:", post["date"])
+    # print(post.keys())
