@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="330.5173mm"
+   height="153.31018mm"
+   viewBox="0 0 330.5173 153.31018"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="scrapingpipeline.svg">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter904"
+       x="-0.045000002"
+       width="1.09"
+       y="-0.090000004"
+       height="1.1799999">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0488839"
+         id="feGaussianBlur906" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1023"
+       x="-0.062825352"
+       width="1.1256506"
+       y="-0.084312513"
+       height="1.168625">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.2880032"
+         id="feGaussianBlur1025" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="577.35074"
+     inkscape:cy="155.93274"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="71.578048,90.972747"
+       orientation="0,1"
+       id="guide991"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.9301167,-109.17953)">
+    <g
+       id="g918"
+       transform="translate(-13.229167,-76.048801)">
+      <g
+         transform="translate(-161.01786,9.0714286)"
+         id="g910">
+        <rect
+           ry="6.0476189"
+           y="178.69345"
+           x="182.18452"
+           height="27.970238"
+           width="55.940475"
+           id="rect846"
+           style="opacity:1;fill:#0d0606;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter904)"
+           transform="matrix(0.98090598,0,0,0.98090598,3.9405098,3.3446845)" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect815"
+           width="55.940475"
+           height="27.970238"
+           x="181.12621"
+           y="177.10597"
+           ry="6.0476189" />
+      </g>
+      <text
+         id="text838"
+         y="202.80836"
+         x="46.885738"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan844"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Futura;-inkscape-font-specification:'Futura Condensed';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           y="202.80836"
+           x="46.885738"
+           sodipodi:role="line">1. Fetching</tspan></text>
+    </g>
+    <g
+       id="g1032"
+       transform="translate(0,2.6458334)">
+      <g
+         id="g924"
+         transform="translate(-106.7405,-30.086898)">
+        <rect
+           transform="matrix(0.98090598,0,0,0.98090598,3.9405098,3.3446845)"
+           style="opacity:1;fill:#0d0606;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter904)"
+           id="rect920"
+           width="55.940475"
+           height="27.970238"
+           x="182.18452"
+           y="178.69345"
+           ry="6.0476189" />
+        <rect
+           ry="6.0476189"
+           y="177.10597"
+           x="181.12621"
+           height="27.970238"
+           width="55.940475"
+           id="rect922"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="101.16314"
+         y="163.64987"
+         id="text930"><tspan
+           sodipodi:role="line"
+           x="101.16314"
+           y="163.64987"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Futura;-inkscape-font-specification:'Futura Condensed';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           id="tspan928">2. Parsing</tspan></text>
+    </g>
+    <g
+       id="g978"
+       transform="translate(-27.354352,38.850205)">
+      <g
+         transform="translate(-13.985122,-25.324405)"
+         id="g942">
+        <rect
+           ry="6.0476189"
+           y="178.69345"
+           x="182.18452"
+           height="27.970238"
+           width="55.940475"
+           id="rect938"
+           style="opacity:1;fill:#0d0606;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter904)"
+           transform="matrix(0.98090598,0,0,0.98090598,3.9405098,3.3446845)" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="rect940"
+           width="55.940475"
+           height="27.970238"
+           x="181.12621"
+           y="177.10597"
+           ry="6.0476189" />
+      </g>
+      <text
+         id="text946"
+         y="168.41254"
+         x="193.91849"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan944"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Futura;-inkscape-font-specification:'Futura Condensed';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+           y="168.41254"
+           x="193.91849"
+           sodipodi:role="line">3. Extracting</tspan></text>
+    </g>
+    <g
+       id="g985"
+       transform="translate(17.884217,14.270621)">
+      <g
+         id="g952"
+         transform="translate(5.66964,39.6875)">
+        <rect
+           transform="matrix(0.98090598,0,0,0.98090598,3.9405098,3.3446845)"
+           style="opacity:1;fill:#0d0606;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;filter:url(#filter904)"
+           id="rect948"
+           width="55.940475"
+           height="27.970238"
+           x="182.18452"
+           y="178.69345"
+           ry="6.0476189" />
+        <rect
+           ry="6.0476189"
+           y="177.10597"
+           x="181.12621"
+           height="27.970238"
+           width="55.940475"
+           id="rect950"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.81607342px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24540183"
+         x="214.66109"
+         y="233.36583"
+         id="text956"><tspan
+           sodipodi:role="line"
+           x="214.66109"
+           y="233.36583"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Futura;-inkscape-font-specification:'Futura Condensed';text-align:center;text-anchor:middle;stroke-width:0.24540183"
+           id="tspan954">4. Tranforming</tspan></text>
+    </g>
+    <g
+       id="g1038">
+      <path
+         transform="matrix(0.97512631,0,0,0.97512631,1.1302679,4.6558804)"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter1023)"
+         d="m 20.283509,140.88332 8.5154,-0.13363 v 20.41071 h 24.946428 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 20.407837 Z"
+         id="path993"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:connector-curvature="0"
+         id="path989"
+         d="m 19.754342,139.82498 8.5154,-0.13363 v 20.41071 H 53.21617 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 19.87867 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g1044"
+       transform="translate(67.351921,40.624968)">
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:connector-curvature="0"
+         id="path1040"
+         d="m 20.283509,140.88332 8.5154,-0.13363 v 20.41071 h 24.946428 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 20.407837 Z"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter1023)"
+         transform="matrix(0.97512631,0,0,0.97512631,1.1302679,4.6558804)" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 19.754342,139.82498 8.5154,-0.13363 v 20.41071 H 53.21617 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 19.87867 Z"
+         id="path1042"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccc" />
+    </g>
+    <g
+       transform="translate(133.63476,81.784475)"
+       id="g1050">
+      <path
+         transform="matrix(0.97512631,0,0,0.97512631,1.1302679,4.6558804)"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter1023)"
+         d="m 20.283509,140.88332 8.5154,-0.13363 v 20.41071 h 24.946428 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 20.407837 Z"
+         id="path1046"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:connector-curvature="0"
+         id="path1048"
+         d="m 19.754342,139.82498 8.5154,-0.13363 v 20.41071 H 53.21617 l -0.377976,-9.60059 16.11934,13.00744 -15.287791,12.84613 -0.151192,-9.07143 H 19.87867 Z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.97890806px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1494727"
+       x="66.752449"
+       y="120.29794"
+       id="text1054"><tspan
+         sodipodi:role="line"
+         id="tspan1052"
+         x="66.752449"
+         y="120.29794"
+         style="stroke-width:0.1494727">Crawl the web and fetch pages and</tspan><tspan
+         sodipodi:role="line"
+         x="66.752449"
+         y="126.27685"
+         style="stroke-width:0.1494727"
+         id="tspan1056">documents (XML, PDF) following a </tspan><tspan
+         sodipodi:role="line"
+         x="66.752449"
+         y="132.25575"
+         style="stroke-width:0.1494727"
+         id="tspan1094">certain URL pattern.</tspan></text>
+    <text
+       id="text1066"
+       y="158.5444"
+       x="133.04066"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.97890806px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1494727"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.1494727"
+         y="158.5444"
+         x="133.04066"
+         sodipodi:role="line"
+         id="tspan1072">Analyse the structure of the web-pages </tspan><tspan
+         style="stroke-width:0.1494727"
+         y="164.52332"
+         x="133.04066"
+         sodipodi:role="line"
+         id="tspan1140">or documents and identifiy sections where </tspan><tspan
+         style="stroke-width:0.1494727"
+         y="170.50221"
+         x="133.04066"
+         sodipodi:role="line"
+         id="tspan1080">pertinent information can be found.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.97890806px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1494727"
+       x="198.54663"
+       y="202.54079"
+       id="text1088"><tspan
+         sodipodi:role="line"
+         x="198.54663"
+         y="202.54079"
+         style="stroke-width:0.1494727"
+         id="tspan1111">Use the output of parsing to extract</tspan><tspan
+         sodipodi:role="line"
+         x="198.54663"
+         y="208.5197"
+         style="stroke-width:0.1494727"
+         id="tspan1154">the information we need.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:54.04999924;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="338.66666"
+       y="157.52679"
+       id="text1092"><tspan
+         sodipodi:role="line"
+         id="tspan1090"
+         x="338.66666"
+         y="446.29056"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       id="text1117"
+       y="241.86707"
+       x="264.01154"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.97890806px;line-height:1;font-family:Futura;-inkscape-font-specification:Futura;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1494727"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.1494727"
+         y="241.86707"
+         x="264.01154"
+         sodipodi:role="line"
+         id="tspan1130">Transform the data into </tspan><tspan
+         style="stroke-width:0.1494727"
+         y="247.84598"
+         x="264.01154"
+         sodipodi:role="line"
+         id="tspan1134">useful formats (currency, </tspan><tspan
+         style="stroke-width:0.1494727"
+         y="253.82487"
+         x="264.01154"
+         sodipodi:role="line"
+         id="tspan1160">date, floating point, text, ...) </tspan></text>
+  </g>
+</svg>
