@@ -341,24 +341,24 @@ def extractInfoArticle(id, online=False):
             "source": "source not found",
             "claim": "claim not found",
             "body": "mainArticle not found",                     # le text de l'article
-                    "referred_links": "listOfAllLinksHref not found",    # tous les liens dans le texte
-                    "title": "fullTitle not found",                      # le titre de l'article
-                    "date": "dateOrigin not found",                      # date de la claim
-                    "url": "address not found",  # url de l'article
-                    "tags": "tags not found",                          # les mots cles
-                    "author": "author not found",                       # auteur de la claim
-                    "datePublished": "datePublished not found",
-                    "rating_value": "rating_value not found",          # la valeur de la veracite
-                    "statementSource": "statementSource not found",
-                    # les entities nomes qui est extraite de la claim
-                    "claim_entities": "claim_entities not found",
-                    # les entities nomes qui est extraite de l'article
-                    "body_entities": "body_entities not found",
-                    # parmi les tages, les entities nomes a partir de la tag
-                    "keyword_entities": "keyword_entities not found",
-                    # les entities nomes a partir de l'auteur de la claim
-                    "author_entities": "author_entities not found",
-                    "review_author": "review_author not found"         # l'auteur de l'article
+            "referred_links": "listOfAllLinksHref not found",    # tous les liens dans le texte
+            "title": "fullTitle not found",                      # le titre de l'article
+            "date": "dateOrigin not found",                      # date de la claim
+            "url": "address not found",  # url de l'article
+            "tags": "tags not found",                          # les mots cles
+            "author": "author not found",                       # auteur de la claim
+            "datePublished": "datePublished not found",
+            "rating_value": "rating_value not found",          # la valeur de la veracite
+            "statementSource": "statementSource not found",
+            # les entities nomes qui est extraite de la claim
+            "claim_entities": "claim_entities not found",
+            # les entities nomes qui est extraite de l'article
+            "body_entities": "body_entities not found",
+            # parmi les tages, les entities nomes a partir de la tag
+            "keyword_entities": "keyword_entities not found",
+            # les entities nomes a partir de l'auteur de la claim
+            "author_entities": "author_entities not found",
+            "review_author": "review_author not found"         # l'auteur de l'article
 
         }
 
@@ -370,11 +370,11 @@ def extractInfoArticle(id, online=False):
             "referred_links": listOfAllLinksHref,    # tous les liens dans le texte
             "title": fullTitle,                      # le titre de l'article
             "date": dateOrigin,                      # date de la claim
-            "url": address,  # url de l'article
-            "tags": tagList,                          # les mots cles
-            "author": author,                       # auteur de la claim
+            "url": address,                          # url de l'article
+            "tags": tagList,                         # les mots cles
+            "author": author,                        # auteur de la claim
             "datePublished": datePublished,
-            "rating_value": veracity,          # la valeur de la veracite
+            "rating_value": veracity,                # la valeur de la veracite
             "statementSource": statementSource,
             # les entities nomes qui est extraite de la claim
             "claim_entities": "claim_entities not found",
